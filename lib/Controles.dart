@@ -41,7 +41,7 @@ class _ControlsState extends State<Controls> {
      // Puedes llamar a esta función aquí si necesitas obtener el valor al iniciar
   }
   void sendGetRequestWithoutAwait(String endpoint) {
-  http.get(Uri.parse('http://192.168.199.203/$endpoint')).timeout(
+  http.get(Uri.parse('http://172.20.10.3/$endpoint')).timeout(
     const Duration(seconds: 5), 
     onTimeout: () {
       print('Error: Servidor no responde dentro del tiempo establecido.');
